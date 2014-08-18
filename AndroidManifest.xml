@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="farin.code.air"
+    android:versionCode="24"
+    android:versionName="2.4.7" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" /> -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+ 
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="farin.code.air.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="farin.code.air.BootCompletedIntentReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="farin.code.air.OnAlarmReceiver" >
+        </receiver>
+
+        <service android:name="farin.code.air.SensorService" >
+        </service>
+        <service android:name="farin.code.air.PlaybackService" >
+            <intent-filter>
+                <action android:name="farin.code.air.action.TOGGLE_PLAYBACK" />
+                <action android:name="farin.code.air.action.NEXT_SONG" />
+                <action android:name="farin.code.air.action.PREVIOUS_SONG" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="farin.code.air.MainWidget"
+            android:label="@string/widgetlbl" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/four_white_widget" />
+        </receiver>
+
+        <!--
+            The attribute "android:exported" must be set to "false" to restrict this content
+            provider to its own app. Otherwise, all apps could access it.
+        -->
+        <activity
+            android:name="farin.code.air.Status"
+            android:label="@string/title_activity_status"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="farin.code.air.status.Flash"
+            android:label="@string/title_activity_flash"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="farin.code.air.Setting"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="farin.code.air.Help"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="farin.code.air.About"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+    </application>
+
+</manifest>

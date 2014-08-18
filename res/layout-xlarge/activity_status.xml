@@ -1,0 +1,379 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/statusbackground"
+    tools:context=".Status" >
+
+    <RelativeLayout
+        android:id="@+id/lightrl"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/saye" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/haste"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/haste" >
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/colockrl"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp" >
+
+        <TextView
+            android:id="@+id/clocktxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="0"
+            android:textSize="140sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clocktxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/clocktxt1"
+            android:text="8"
+            android:textSize="140sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clocktxt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=":"
+            android:textSize="140sp"
+            android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/clocktxt5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="5"
+    android:textSize="140sp"
+    android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clocktxt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/clocktxt5"
+            android:text="5"
+            android:textSize="140sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clocktxt1shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/clocktxt1"
+            android:layout_alignRight="@id/clocktxt1"
+            android:layout_below="@id/clocktxt1"
+            android:layout_marginTop="-15dp"
+            android:text="0"
+            android:textSize="140sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clocktxt2shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/clocktxt2"
+            android:layout_alignRight="@id/clocktxt2"
+            android:layout_below="@id/clocktxt2"
+            android:layout_marginTop="-15dp"
+            android:text="8"
+            android:textSize="140sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clocktxt3shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/clocktxt3"
+            android:layout_alignRight="@id/clocktxt3"
+            android:layout_below="@id/clocktxt3"
+            android:layout_marginTop="-15dp"
+            android:text=":"
+            android:textSize="100sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clocktxt4shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/clocktxt4"
+            android:layout_alignRight="@id/clocktxt4"
+            android:layout_below="@id/clocktxt4"
+            android:layout_marginTop="-15dp"
+            android:text="5"
+            android:textSize="140sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clocktxt5shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/clocktxt5"
+            android:layout_alignRight="@id/clocktxt5"
+            android:layout_below="@id/clocktxt5"
+            android:layout_marginTop="-15dp"
+            android:text="5"
+            android:textSize="140sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/daterl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colockrl"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/datelblrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/recom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:text="TextView"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/recom"
+                android:text="TextView"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_toRightOf="@id/textView2"
+                android:text="TextView"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView3"
+                android:text="TextView"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bgrl"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/daterl"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="25dp" >
+
+        <RelativeLayout
+            android:id="@+id/callinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/misscallimg"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:src="@drawable/misscalls" />
+
+            <TextView
+                android:id="@+id/misscalllbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/misscallimg"
+                android:layout_alignTop="@id/misscallimg"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="22"
+                android:textColor="#072a8e"
+                android:textSize="37sp" >
+
+            </TextView>
+
+        </RelativeLayout>
+         <RelativeLayout
+            android:id="@+id/smsinfo"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/smsimg"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:src="@drawable/smss" />
+
+            <TextView
+                android:id="@+id/smslbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/smsimg"
+                android:layout_alignTop="@+id/smsimg"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="22"
+                android:textColor="#072a8e"
+                android:textSize="37sp" >
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/batteryinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/batteryimg"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:src="@drawable/batterys" />
+
+            <TextView
+                android:id="@+id/batterylbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/batteryimg"
+                android:layout_alignTop="@+id/batteryimg"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="22"
+                android:textColor="#072a8e"
+                android:textSize="37sp" >
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/quiceaccessrl"
+        android:layout_width="520dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bgrl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" >
+
+        <ImageButton
+            android:id="@+id/gpsimgbtn"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gps" />
+
+        <ImageButton
+            android:id="@+id/flashimgbtn"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/flashoff" />
+
+        <ImageButton
+            android:id="@+id/wifibtnimg"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/flashimgbtn"
+            android:background="@drawable/wifi" />
+
+        <ImageButton
+            android:id="@+id/btimgbtn"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/gpsimgbtn"
+            android:background="@drawable/bt" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playerrl"
+        android:layout_width="520dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/quiceaccessrl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" >
+
+        <ImageButton
+            android:id="@+id/backimgbtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="false"
+            android:background="@drawable/backselector" />
+
+        <ImageButton
+            android:id="@+id/nextimgbtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:background="@drawable/nextselector" />
+
+        <ImageButton
+            android:id="@+id/playimgbtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/play" />
+
+        <SeekBar
+            android:id="@+id/timeline"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/playimgbtn"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:thumb="@drawable/scrubber_control_normal_holo" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

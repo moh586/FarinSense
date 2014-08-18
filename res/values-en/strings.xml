@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Air Gesture</string>
+    <string name="action_settings">Settings</string>
+    <string name="authority">farin.code.air.MainActivity</string>
+    <string name="title_activity_status">Status</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main_setting">MainSetting</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="tab1">Main</string>
+    <string name="tab2">Advanced</string>
+    <string name="method1">Shake Phone at the First and then Swipe</string>
+    <string name="method2">Swipe twic with At Least  1 Second Distance</string>
+    <string name="calltitle">Incaming Call</string>
+    <string name="callanswer">Answer All</string>
+    <string name="callreject">Reject All</string>
+    <string name="callsilence">Silence All</string>
+    <string name="quiceaccesstitle">Quick ToolBar</string>
+    <string name="quiceaccessenable">Enable</string>
+    <string name="quiceaccessdisable">Disable</string>
+    <string name="gps">GPS</string>
+    <string name="wifi">WIFI</string>
+    <string name="flash">Flashlight</string>
+    <string name="bt">Bluetooth</string>
+    <string name="title_activity_flash">Flash</string>
+    <string name="trylbl">Try Text</string>
+    <string name="trytxt">این متن به صورت صحیح دیده می شود</string>
+    <string name="texttitle">Text Setting</string>
+    <string name="textchbox"> ُSet Text Reshape</string>
+    <string name="vibratetitle">Sound and Vibrate</string>
+    <string name="vibratechbox">Vibrate</string>
+    <string name="soundchbox">Sound</string>
+    <string name="detecttitle">Detect Method</string>
+    <string name="langtitle">Language</string>
+    <string name="emptyfolder">Music List is Empty</string>
+    <string name="widgetlbl">Air Gesture Widget</string>
+	<string name="help">There are two way to detect.you can select one of them,in
+	    advanced tab.</string>
+	 <string name="gyrtitle">Rotate Sensor</string>
+	 <string name="gyrchbox">Active in Flat Surface</string>
+	 <string name="verifylbl"> This Action Have Prosessor And Battrey Usage.Are You Sure?</string>
+	 <string name="recomlbl">It is Recommended That if Your Prosessor is Weak Disable this Action  </string>
+     <string-array name="language">
+        <item>فارسی</item>
+        <item>English</item>
+    </string-array>
+    <string name="expirelbl">Your Trial Version has been expire.For Purchase Fullversion Please Click on Button </string>
+    <string name="corporation">شرکت فرین ایده</string>
+    <string name="site">www.farinidea.com</string>
+    <string name="tell">09155070053</string>
+    <string name="email">info@farinidea.com</string>
+     <string name="help_onoff">فعال نمودن نرم افزار\n\n
+جهت فعال نمودن نرم افزار دکمه آبی را به سمت راست کشیده و جهت غیرفعال نمودن به سمت چپ بازگردانید.
+     </string>
+     <string name="help_setting">تنظیمات \n\n
+جهت ورود به منوی تنظیمات از دکمه زیر استفاده نمایید.
+     </string>
+     <string name="help_lang">زبان \n\n
+جهت انتخاب زبان نرم افزار می توانید از این گزینه استفاده نمایید.
+         
+     </string>
+     <string name="help_detect">تعیین نحوه عملکرد سنسور\n\n
+1.	ابتدا گوشی را بلرزانید و سپس دست را بروی سنسور گوشی حرکت دهید.\n
+2.	دست خود را دو بار با فاصله زمانی یک ثانیه روی سنسور گوشی حرکت دهید.
+         
+     </string>
+     <string name="help_call">تنظیمات تماس های ورودی\n\n
+با انتخاب گزینه اول، با حرکت دست روی سنسور تماس برقرار خواهد شد. \n
+با انتخاب گزینه دوم، با حرکت دست روی سنسور تماس رد خواهد شد. \n
+با انتخاب گزینه سوم، با حرکت دست روی سنسور تماس در حالت سکوت قرار خواهد گرفت. 
+         
+     </string>
+     <string name="help_quick">نوار دسترسی سریع\n\n
+با انتخاب گزینه غیرفعال، آیکن های زیر در نرم افزار نمایش داده نخواهد شد.
+با انتخاب گزینه فعال، امکان انتخاب آیکن های زیر جهت نمایش در نرم افزار فراهم خواهد شد
+         
+     </string>
+     <string name="help_vibrate">صدا و لرزش\n\n
+این گزینه جهت اطلاع از بازخورد دست شما در برابر سنسور می باشد. در صورت شناسایی دست توسط سنسور، نرم افزار با لرزش یا صدا همراه خواهد شد.
+         
+     </string>
+     <string name="help_flat">سنسور سطح\n\n
+با فعال نمودن این گزینه، نرم افزار در صورتی عمل خواهد کرد که موبایل در سطح صاف قرار داشته باشد. لازم به ذکر است فعال نمودن این گزینه ممکن است سرعت دستگاه شما را پایین آورد و شارژ بیشتری مصرف نماید.
+         
+     </string>
+     <string name="help_widget">برای فعال نمودن ویجت پخش آهنگ، می توانید از قسمت ویجت ها، ویجت این نرم افزار را استفاده نمایید.</string>
+     <string name="expirelbl">حداکثر تعداد دفعات مجاز در نسخه آزمایشی به پایان رسیده است در صورت تمایل روی دکمه زیر کلیک کنید</string>
+     <string name="notify_content">Music is Playing</string>
+     <string name="scrtitle">Disable When Screen On</string>
+    <string name="scrchbox">Disable Sensor when Screen is On</string>
+    <string name="help_disable">با انتخاب این گزینه سنسور در زمانیکه صفحه روشن است (به استثنای زمان تماس ورودی) فعال نخواهد بود </string>
+</resources>

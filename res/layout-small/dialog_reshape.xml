@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_bg"
+    android:paddingBottom="20dp" >
+
+    <TextView
+        android:id="@+id/trylbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/trylbl"
+        android:textColor="#333333" />
+
+    <RelativeLayout
+        android:id="@+id/dialogsbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trylbl"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/withreshape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#44f2f2f2"
+            android:gravity="right|center_vertical"
+            android:text="@string/trytxt" />
+
+        <Button
+            android:id="@+id/withoutreshape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/withreshape"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#44f2f2f2"
+            android:gravity="right|center_vertical"
+            android:text="@string/trytxt" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
